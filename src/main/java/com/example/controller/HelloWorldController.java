@@ -13,4 +13,10 @@ public class HelloWorldController {
 		return ResponseEntity.ok("I am at SpringOne conference and i deployed to Heroku");
 	}
 
+@GetMapping("/")
+	public ResponseEntity<String> index(){
+		return ResponseEntity.ok("I am at SpringOne conference and i deployed to Heroku called from Index");
+	}
+
+
 }
